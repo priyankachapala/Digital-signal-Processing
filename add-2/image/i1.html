@@ -1,0 +1,377 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://www.mathworks.com/help/schema/MathWorksDocPage"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>imshow</title>
+<link rel="stylesheet" href="i1_files/docstyle.css" type="text/css">
+<meta name="chunktype" content="refpage">
+<meta name="refentity" itemprop="refentity" content="function:imshow"><link href="i1_files/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta name="toctype" itemprop="pagetype" content="fcn">
+<meta name="infotype" itemprop="infotype" content="ref/function">
+
+<meta name="description" itemprop="description" content="This MATLAB function displays image I in a Handle Graphics figure, where I is a grayscale, RGB (truecolor), or binary image.">
+<script type="text/javascript" src="i1_files/jquery-latest.js"></script>
+<link href=i1_files/site6.css?201508041835" rel="stylesheet" type="text/css">
+<link href=i1_files/site6_lg.css?201508041835" rel="stylesheet" media="screen and (min-width: 1200px)">
+<link href=i1_files/site6_md.css?201508041835" rel="stylesheet" media="screen and (min-width: 992px) and (max-width: 1199px)">
+<link href=i1_files/site6_sm+xs.css?201508041835" rel="stylesheet" media="screen and (max-width: 991px)">
+<link href=i1_files/site6_sm.css?201508041835" rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 991px)">
+<link href=i1_files/site6_xs.css?201508041835" rel="stylesheet" media="screen and (max-width: 767px)">
+<link href=i1_files/site6_offcanvas.css?201508041835" rel="stylesheet" type="text/css">
+
+<script src="i1_files/l10n.js"></script>
+<script src="i1_files/docscripts.js"></script>
+<script src="i1_files/docscripts.js"></script>
+<script src="i1_files/mw.imageanimation.js"></script>
+<script src="i1_files/jquery.highlight.js"></script>
+<script src="i1_files/underscore-min.js"></script>
+<script src="i1_files/suggest.js"></script>
+
+
+
+
+
+<script src="i1_files/jquery.mobile.custom.min.js"></script>
+<script src="i1_files/bootstrap.min.js" type="text/javascript"></script>
+<script src="i1_files/global.js"></script>
+<link href="i1_files/doc_center.css" rel="stylesheet" type="text/css">
+<link href="i1_files/doc_center_installed.css" rel="stylesheet" type="text/css">
+<link href="i1_files/doc_center_print.css" rel="stylesheet" type="text/css" media="print">
+<script type="text/javascript" src="i1_files/MathRenderer.js"></script><style type="text/css">math { visibility: hidden; }</style><link type="text/css" rel="stylesheet" href="i1_files/main.css"><script type="text/javascript" src="i1_files/dojo.js"></script>
+</head>
+<body id="responsive_offcanvas">
+<div class="sticky_header_container includes_subnav affix">
+<div class="section_header level_3">
+<div class="container-fluid">
+<div class="row" id="mobile_search_row">
+<div class="col-xs-12 col-sm-6 col-sm-push-6 col-md-5 col-md-push-7" id="mobile_search">
+<div class="search_nested_content_container">
+<form id="docsearch_form" name="docsearch_form" method="get" data-release="R2015b" data-language="en" action="../../templates/searchresults.html">
+<div class="input-group tokenized_search_field">
+<label class="sr-only">Search Documentation</label>
+<input type="text" class="form-control conjoined_search" autocomplete="off" name="qdoc" placeholder="Search Documentation" id="docsearch">
+<div class="input-group-btn">
+<button type="submit" name="submitsearch" id="submitsearch" class="btn icon-search btn_search_adjacent btn_search icon_16" tabindex="-1" disabled=""></button>
+</div>
+</div>
+</form>
+</div>
+<button class="btn icon-remove btn_search pull-right icon_32 visible-xs" data-toggle="collapse" href="#mobile_search" aria-expanded="false" aria-controls="mobile_search"></button></div>
+<div class="col-xs-9 col-sm-6 col-sm-pull-6 col-md-7 col-md-pull-5">
+<div class="section_header_content">
+<h1><a href="../../documentation-center.html">Documentation</a></h1>
+</div>
+</div>
+<div class="col-xs-3 visible-xs">
+<button class="btn icon-search btn_search pull-right icon_16" data-toggle="collapse" href="#mobile_search" aria-expanded="false" aria-controls="mobile_search"></button>
+</div>
+</div><!--END.CLASS row-->
+</div><!--END.CLASS container-fluid-->
+</div><!--END.CLASS section_header level_3-->
+<div class="horizontal_nav_container">
+<div class="offcanvas_actuator" data-toggle="offcanvas" data-target="#sidebar" id="nav_toggle">
+<button type="button" class="btn"><span class="sr-only">Toggle navigation</span><span class="icon-menu icon_32"></span></button>
+<span class="offcanvas_actuator_label"></span><span class="offcanvas_actuator_close"></span>
+</div>
+<div class="offcanvas_horizontal_nav">
+<div class="container-fluid">
+<div class="row"></div>
+</div>
+</div>
+</div>
+</div><!--END.CLASS sticky_header_container-->
+<div class="row-offcanvas row-offcanvas-left">
+<div class="sidebar-offcanvas" id="sidebar" role="navigation">
+<nav class="offcanvas_nav" role="navigation">
+<ul xmlns:atict="http://www.arbortext.com/namespace/atict" class="nav_breadcrumb">
+<li itemscope="" itemtype="http://www.data-vocabulary.org/Breadcrumb" itemprop="breadcrumb"><a href="../../documentation-center.html" itemprop="url"><span itemprop="title">All Products</span></a></li>
+</ul>
+
+<ul xmlns:atict="http://www.arbortext.com/namespace/atict" class="nav_disambiguation">
+<li class="product"><a href="../index.html">MATLAB</a>
+<div class="dropdown">
+<span class="icon-arrow-down icon_16" id="dropdownMenu1" data-toggle="dropdown"></span>
+<ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu1">
+<li role="presentation"><a role="menuitem" tabindex="-1" href="../getting-started-with-matlab.html?s_cid=doc_flyout">Getting Started</a></li>
+<li role="presentation"><a role="menuitem" tabindex="-1" href="../examples.html?s_cid=doc_flyout">Examples</a></li>
+<li role="presentation"><a role="menuitem" tabindex="-1" href="../functionlist.html?s_cid=doc_flyout">Functions</a></li>
+<li role="presentation"><a role="menuitem" tabindex="-1" href="../release-notes.html?s_cid=doc_flyout">Release Notes</a></li>
+<li role="presentation"><a role="menuitem" tabindex="-1" href="http://www.mathworks.com/help/releases/R2015b/pdf_doc/matlab/index.html?s_cid=doc_flyout">PDF Documentation</a></li>
+</ul>
+</div>
+</li>
+<li itemscope="" itemtype="http://www.data-vocabulary.org/Breadcrumb" itemprop="breadcrumb"><a href="../graphics.html" itemprop="url"><span itemprop="title">Graphics</span></a></li>
+<li itemscope="" itemtype="http://www.data-vocabulary.org/Breadcrumb" itemprop="breadcrumb"><a href="../images_btfntr_-1.html" itemprop="url"><span itemprop="title">Images</span></a></li>
+</ul>
+<ul xmlns:atict="http://www.arbortext.com/namespace/atict" class="nav_scrollspy nav">
+<li class="nav_scrollspy_function"><a href="#responsive_offcanvas">imshow</a></li>
+<li class="nav_scrollspy_title" id="SSPY810-refentry">On this page</li>
+<li class=""><a href="#syntax" class="intrnllnk">Syntax</a></li>
+<li class=""><a href="#description" class="intrnllnk">Description</a></li>
+<li class="active"><a href="#examples" class="intrnllnk">Examples</a><ul class="nav">
+<li class=""><a href="#buioq42-1" class="intrnllnk">Display Grayscale Image</a></li>
+<li class="active"><a href="#buin9f3-1" class="intrnllnk">Display Image from File</a></li>
+<li class=""><a href="#buin_0x-1" class="intrnllnk">Display Indexed Image</a></li>
+</ul>
+</li><li class=""><a href="#inputs" class="intrnllnk">Input Arguments</a><ul class="nav">
+<li class=""><a href="#input_argument_i" class="intrnllnk">I</a></li>
+<li class=""><a href="#input_argument_x" class="intrnllnk">X</a></li>
+<li class=""><a href="#input_argument_map" class="intrnllnk">map</a></li>
+<li class=""><a href="#input_argument_filename" class="intrnllnk">filename</a></li>
+<li class=""><a href="#input_argument_lowhigh" class="intrnllnk">[low high]</a></li>
+</ul>
+</li><li class=""><a href="#namevaluepairs" class="intrnllnk">Name-Value Pair Arguments</a><ul class="nav">
+<li class=""><a href="#input_argument_namevalue_border" class="intrnllnk">'Border'</a></li>
+<li class=""><a href="#input_argument_namevalue_colormap" class="intrnllnk">'Colormap'</a></li>
+<li class=""><a href="#input_argument_namevalue_displayrange" class="intrnllnk">'DisplayRange'</a></li>
+<li><a href="#input_argument_namevalue_initialmagnification" class="intrnllnk">'InitialMagnification'</a></li>
+<li><a href="#input_argument_namevalue_parent" class="intrnllnk">'Parent'</a></li>
+<li><a href="#input_argument_namevalue_reduce" class="intrnllnk">'Reduce'</a></li>
+<li><a href="#input_argument_namevalue_xdata" class="intrnllnk">'Xdata'</a></li>
+<li><a href="#input_argument_namevalue_ydata" class="intrnllnk">'YData'</a></li>
+</ul>
+</li><li><a href="#zmw57dd0e366244" class="intrnllnk">Output Arguments</a><ul class="nav">
+<li><a href="#output_argument_himage" class="intrnllnk">himage</a></li>
+</ul>
+</li><li><a href="#moreabout" class="intrnllnk">More About</a><ul class="nav">
+<li><a href="#buiws8u-4" class="intrnllnk">Tips</a></li>
+</ul>
+</li><li><a href="#zmw57dd0e366404" class="intrnllnk">See Also</a></li>
+</ul>
+</nav>
+<script src="i1_files/offcanvas.js"></script></div><!--END.CLASS sidebar-offcanvas-->
+<div class="content_container" id="content_container">
+<div class="container-fluid">
+<div class="row">
+<div class="col-xs-12">
+
+<section id="doc_center_content" lang="en"><div id="pgtype-ref-function"><div class="function_ref"><span id="buin8q9-1" class="anchor_target"></span><div itemprop="content"><h1 class="r2015b" itemprop="title">imshow</h1><!-- SYNCHTO: _funcalpha.html --><div class="doc_topic_desc"><div class="purpose_container"><p itemprop="purpose">Display image</p><div class="switch"><a href="javascript:void(0);" id="expandAllPage" data-allexpanded="true1">collapse all in page</a></div></div></div></div>
+<div class="ref_sect"><h2 id="syntax">Syntax</h2><div class="syntax_signature"><div class="syntax_signature_module"><ul><li><div class="code_responsive"><code class="synopsis">imshow(I)</code></div> <span class="syntax_example"><a href="imshow.html#buioq42-1" class="intrnllnk">example</a></span></li><li><div class="code_responsive"><code class="synopsis">imshow(X,map)</code></div> <span class="syntax_example"><a href="imshow.html#buin_0x-1" class="intrnllnk">example</a></span></li><li><div class="code_responsive"><code class="synopsis">imshow(filename)</code></div> <span class="syntax_example"><a href="imshow.html#buin9f3-1" class="intrnllnk">example</a></span></li><li><div class="code_responsive"><code class="synopsis">imshow(I,[low high])</code></div></li><li><div class="code_responsive"><code class="synopsis">imshow(___,Name,Value)</code></div></li></ul></div><div class="syntax_signature_module"><ul><li><div class="code_responsive"><code class="synopsis">himage = imshow(<span class="argument_placeholder">___</span>)</code></div></li></ul></div></div></div><div class="clear"></div><div itemprop="content" class="ref_sect"><span id="buin8q9-2" class="anchor_target"></span><h2 id="description">Description</h2><div class="descriptions"><div class="description_module"><span id="bukb69f" class="anchor_target"></span>
+<div class="description_element"><p class="syntax_example"><a href="imshow.html#buioq42-1" class="intrnllnk">example</a></p><div class="code_responsive"><p><span itemprop="syntax"><code>imshow(<a href="#inputarg_I" class="intrnllnk"><code>I</code></a>)</code></span> displays
+image <code>I</code> in a Handle Graphics<sup>®</sup> figure, where <code>I</code> is
+a grayscale, RGB (truecolor), or binary image. For binary images, <code>imshow</code> displays
+pixels with the value <code>0</code> (zero) as black and <code>1</code> as
+white. <code>imshow</code> optimizes figure, axes, and image
+object properties for image display.</p></div></div>
+<div class="description_element"><p class="syntax_example"><a href="imshow.html#buin_0x-1" class="intrnllnk">example</a></p><div class="code_responsive"><p><span itemprop="syntax"><code>imshow(<a href="#inputarg_X" class="intrnllnk"><code>X</code></a>,<a href="#inputarg_map" class="intrnllnk"><code>map</code></a>)</code></span> displays
+the indexed image <code>X</code> with the colormap <code>map</code>.
+A colormap matrix can have any number of rows, but it must have exactly
+3 columns.  Each row is interpreted as a color, with the first element
+specifying the intensity of red light, the second  green, and the
+third blue. Color intensity can be specified on the interval 0.0 to
+1.0.</p></div></div>
+<div class="description_element"><p class="syntax_example"><a href="imshow.html#buin9f3-1" class="intrnllnk">example</a></p><div class="code_responsive"><p><span itemprop="syntax"><code>imshow(<a href="#inputarg_filename" class="intrnllnk"><code>filename</code></a>)</code></span> displays
+the image stored in the graphics file specified by <code>filename</code>.</p></div></div>
+<div class="description_element"><div class="code_responsive"><p><span itemprop="syntax"><code>imshow(<a href="#inputarg_I" class="intrnllnk"><code>I</code></a>,<a href="#inputarg_lowhigh" class="intrnllnk"><code>[low high]</code></a>)</code></span> displays
+grayscale image <code>I</code>, specifying the display range
+as a two-element vector, <code>[low high]</code>. For more information,
+see the <a href="#inputarg_DisplayRange" class="intrnllnk"><code>DisplayRange</code></a> parameter.</p></div></div>
+<div class="description_element"><div class="code_responsive"><p><span itemprop="syntax"><code>imshow(___,Name,Value)</code></span> displays an image,
+using name-value pairs to control aspects of the operation. </p></div></div>
+</div><div class="description_module"><span id="bukb69i" class="anchor_target"></span>
+<div class="description_element"><div class="code_responsive"><p><span itemprop="syntax"><code><a href="#outputarg_himage" class="intrnllnk"><code>himage</code></a> = imshow(<span class="argument_placeholder">___</span>)</code></span> returns
+the handle to the image object created by <code>imshow</code>.</p></div></div>
+</div></div><div class="clear"></div></div><div itemprop="content" class="ref_sect"><div class="clear"></div><div class="examples"><h2 id="examples">Examples</h2><div class="expandableContent" id="expandableExamples"><p class="switch"><a href="javascript:void(0);" class="expandAllLink" data-allexpanded="true3">collapse all</a></p><div itemscope="" itemtype="http://www.mathworks.com/help/schema/MathWorksDocPage/Example" itemprop="example" class="em_example"><meta itemprop="exampleid" content="matlab-ex73710607"><meta itemprop="exampletitle" content="Display Grayscale Image"></div><div class="example_module expandableContent" id="example_1"><span id="buioq42-1" class="anchor_target"></span><h3 class="expand expanded" id="buioq42-1"><span><a style="display:block;" href="javascript:void(0);" title="Expand/Collapse"><span class="example_title">Display Grayscale Image</span></a></span></h3><div class="collapse" style="display:block">
+
+<p>Display a grayscale image by reading an RGB image into the workspace and converting it to a grayscale image.</p>
+
+<p>Read RGB image into the workspace.</p><div class="code_responsive"><div class="programlisting"><div class="codeinput"><pre>RGB = imread(<span style=i1_files/"color:#A020F0">'peppers.png'</span>);
+</pre></div></div></div><p>Convert the image to grayscale.</p><div class="code_responsive"><div class="programlisting"><div class="codeinput"><pre>I = rgb2gray(RGB);
+</pre></div></div></div><p>Display the grayscale image.</p><div class="code_responsive"><div class="programlisting"><div class="codeinput"><pre>imshow(I)
+</pre></div></div></div><p>
+<img src="i1_files/DisplayGrayscaleImageExample_01.png" alt=""></p></div></div><div itemscope="" itemtype="http://www.mathworks.com/help/schema/MathWorksDocPage/Example" itemprop="example" class="em_example"><meta itemprop="exampleid" content="matlab-ex92957956"><meta itemprop="exampletitle" content="Display Image from File"></div><div class="example_module expandableContent" id="example_2"><span id="buin9f3-1" class="anchor_target"></span><h3 class="expand expanded" id="buin9f3-1"><span><a style="display:block;" href="javascript:void(0);" title="Expand/Collapse"><span class="example_title">Display Image from File</span></a></span></h3><div class="collapse" style="display:block">
+
+<p>Display an image stored in a file.</p><div class="code_responsive"><div class="programlisting"><div class="codeinput"><pre>imshow(<span style=i1_files/"color:#A020F0">'peppers.png'</span>);
+</pre></div></div></div><p>
+<img src="i1_files/DisplayImageFromFileExample_01.png" alt=""></p></div></div><div itemscope="" itemtype="http://www.mathworks.com/help/schema/MathWorksDocPage/Example" itemprop="example" class="em_example"><meta itemprop="exampleid" content="matlab-ex98825486"><meta itemprop="exampletitle" content="Display Indexed Image"></div><div class="example_module expandableContent" id="example_3"><span id="buin_0x-1" class="anchor_target"></span><h3 class="expand expanded" id="buin_0x-1"><span><a style="display:block;" href="javascript:void(0);" title="Expand/Collapse"><span class="example_title">Display Indexed Image</span></a></span></h3><div class="collapse" style="display:block">
+
+<p>Read a sample indexed image, <code>corn.tif</code>, into the workspace, and then display it.</p><div class="code_responsive"><div class="programlisting"><div class="codeinput"><pre>[X,map] = imread(<span style="color:#A020F0">'corn.tif'</span>);
+imshow(X,map)
+</pre></div></div></div><p>
+<img src="i1_files/DisplayIndexedImageExample_01.png" alt=""></p></div></div></div></div></div><div itemprop="content" class="ref_sect"><h2 id="inputs">Input Arguments</h2><div class="expandableContent"><div class="arguments"><div class="input_argument_container"><p class="switch"><a href="javascript:void(0);" class="expandAllLink" data-allexpanded="true7">collapse all</a></p><div class="expandableContent"><span id="inputarg_I" class="anchor_target"></span><h3 id="input_argument_i" class="expand expanded"><span><a style="display: block;" href="javascript:void(0);" title="Expand/Collapse"><span class="argument_name"><code>I</code> — Input image</span></a><span class="example_desc">scalar | vector | matrix | <code>m</code>-by-<code>n</code>-by-3 array</span></span></h3><div class="collapse" style="display:block">
+<p>Input image, specified as a scalar, vector, or matrix representing
+a grayscale, RGB, or binary image. Multi-plane image inputs must be
+RGB images of size <code>m</code>-by-<code>n</code>-by-3.
+An RGB image can be <code>uint8</code>, <code>uint16</code>, <code>single</code>,
+or <code>double</code>. A grayscale image can be any numeric
+data type. A binary image is of class <code>logical</code>.</p>
+<p class="datatypelist"><strong>Data Types: </strong><code>single</code> | <code>double</code> | <code>int8</code> | <code>int16</code> | <code>int32</code> | <code>int64</code> | <code>uint8</code> | <code>uint16</code> | <code>uint32</code> | <code>uint64</code></p></div></div><div class="expandableContent"><span id="inputarg_X" class="anchor_target"></span><h3 id="input_argument_x" class="expand expanded"><span><a style="display: block;" href="javascript:void(0);" title="Expand/Collapse"><span class="argument_name"><code>X</code> — Indexed image</span></a><span class="example_desc">2-D array of real numeric values</span></span></h3><div class="collapse" style="display:block">
+<p>Indexed image, specified as a 2-D array of real numeric values.
+The values in <code>X</code> are indices into the colormap
+specified by <a href="#inputarg_map" class="intrnllnk"><code>map</code></a>.</p>
+<p class="datatypelist"><strong>Data Types: </strong><code>single</code> | <code>double</code> | <code>uint8</code> | <code>logical</code></p></div></div><div class="expandableContent"><span id="inputarg_map" class="anchor_target"></span><h3 id="input_argument_map" class="expand expanded"><span><a style="display: block;" href="javascript:void(0);" title="Expand/Collapse"><span class="argument_name"><code>map</code> — Colormap</span></a><span class="example_desc"><i>m</i>-by-3 array</span></span></h3><div class="collapse" style="display:block">
+<p>Colormap, specified as an <i>m</i>-by-3 array of
+type <code>single</code> or <code>double</code> in the
+range <code>[0 1]</code>, or an <i>m</i>-by-3 array
+of type <code>uint8</code>. Each row specifies an RGB color
+value.</p>
+<p class="datatypelist"><strong>Data Types: </strong><code>single</code> | <code>double</code> | <code>uint8</code></p></div></div><div class="expandableContent"><span id="inputarg_filename" class="anchor_target"></span><h3 id="input_argument_filename" class="expand expanded"><span><a style="display: block;" href="javascript:void(0);" title="Expand/Collapse"><span class="argument_name"><code>filename</code> — File name</span></a><span class="example_desc">string</span></span></h3><div class="collapse" style="display:block">
+<p>File name, specified as a string. The image must be readable
+by <code>imread</code>. The <code>imshow</code> function
+displays the image, but does not store the image data in the MATLAB<sup>®</sup> workspace.
+If the file contains multiple images, <code>imshow</code> displays
+the first image in the file.</p>
+<p class="description_valueexample"><strong>Example: </strong><code>imshow('peppers.png')</code></p>
+<p class="datatypelist"><strong>Data Types: </strong><code>char</code></p></div></div><div class="expandableContent"><span id="inputarg_lowhigh" class="anchor_target"></span><h3 id="input_argument_lowhigh" class="expand expanded"><span><a style="display: block;" href="javascript:void(0);" title="Expand/Collapse"><span class="argument_name"><code>[low high]</code> — Grayscale image display range</span></a><span class="example_desc">two-element vector</span></span></h3><div class="collapse" style="display:block">
+<p>Grayscale image display range, specified as a two-element vector.
+For more information, see the <code>'DisplayRange'</code> name-value
+pair argument.</p>
+<p class="description_valueexample"><strong>Example: </strong><code>[50 250]</code></p><p class="datatypelist"><strong>Data Types: </strong><code>single</code> | <code>double</code> | <code>int8</code> | <code>int16</code> | <code>int32</code> | <code>int64</code> | <code>uint8</code> | <code>uint16</code> | <code>uint32</code> | <code>uint64</code></p></div></div><span id="namevaluepairarguments" class="anchor_target"></span><h3 id="namevaluepairs" class="bottom_ruled">Name-Value Pair Arguments</h3><span id="buin8q9-1_1" class="anchor_target"></span><div class="namevaluecontainer"><p>Specify optional comma-separated pairs of <code>Name,Value</code> arguments.
+<code>Name</code> is the argument
+name and <code>Value</code> is the corresponding
+value. <code>Name</code> must appear
+inside single quotes (<code>' '</code>).
+You can specify several name and value pair
+arguments in any order as <code>Name1,Value1,...,NameN,ValueN</code>.</p><span class="example_desc"><strong>Example: </strong><code>imshow('board.tif','Border','tight')</code></span></div><div class="expandableContent"><span id="inputarg_Border" class="anchor_target"></span><h3 id="input_argument_namevalue_border" class="expand expanded"><span><a style="display: block;" href="javascript:void(0);" title="Expand/Collapse"><span class="argument_name"><code>'Border'</code> — Figure window border space</span></a><span class="example_desc"><code>'loose'</code> (default) | <code>'tight'</code> </span></span></h3><div class="collapse" style="display:block">
+<p>Figure window border space, specified as the comma-separated
+pair consisting of <code>'Border'</code> and either <code>'tight'</code> or <code>'loose'</code>.
+When set to <code>‘loose'</code>, the figure window
+includes space around the image in the figure. When set to <code>‘tight'</code>,
+the figure window does not include any space around the image in the
+figure. </p>
+<p>If the image is very small or if the figure contains other objects
+besides an image and its axes, <code>imshow</code> might use
+a border regardless of how this parameter is set.</p>
+<p class="description_valueexample"><strong>Example: </strong><code>imshow('board.tif','Border','tight')</code></p>
+<p class="datatypelist"><strong>Data Types: </strong><code>char</code></p></div></div><div class="expandableContent"><span id="inputarg_Colormap" class="anchor_target"></span><h3 id="input_argument_namevalue_colormap" class="expand expanded"><span><a style="display: block;" href="javascript:void(0);" title="Expand/Collapse"><span class="argument_name"><code>'Colormap'</code> — Colormap</span></a><span class="example_desc"><code>m</code>-by-3 matrix</span></span></h3><div class="collapse" style="display:block">
+<p>Colormap, specified as the comma-separated pair consisting of <code>'Colormap'</code> and
+an <code>m</code>-by-3 matrix. <code>imshow</code> uses
+this to set the figure's <code>colormap</code> property. Use
+this parameter to view grayscale images in false color.  If you specify
+an empty colormap (<code>[]</code>), then <code>imshow</code> ignores
+this parameter.</p>
+<p class="description_valueexample"><strong>Example: </strong><code>newmap = copper; imshow('board.tif','Colormap',newmap)</code></p>
+<p class="datatypelist"><strong>Data Types: </strong><code>double</code></p></div></div><div class="expandableContent"><span id="inputarg_DisplayRange" class="anchor_target"></span><h3 id="input_argument_namevalue_displayrange" class="expand expanded"><span><a style="display: block;" href="javascript:void(0);" title="Expand/Collapse"><span class="argument_name"><code>'DisplayRange'</code> — Grayscale image display range</span></a><span class="example_desc">two-element vector </span></span></h3><div class="collapse" style="display:block">
+<p>Grayscale image display range, specified as the comma-separated
+pair consisting of <code>'DisplayRange'</code> and a two-element
+vector of the form <code>[low high]</code>. The <code>imshow</code> function
+displays the value <code>low</code> (and any value less than <code>low</code>)
+as black, and it displays the value <code>high</code> (and any
+value greater than <code>high</code>) as white. Values between <code>low</code> and <code>high</code> are
+displayed as intermediate shades of gray, using the default number
+of gray levels. </p>
+<p>For <code>uint8</code>, <code>'DisplayRange'</code> defaults
+to <code>[0 255]</code>. For all other data types it defaults
+to <code>[min(I(:)) max(I(:))]</code>. If you specify an empty
+matrix (<code>[]</code>), <code>imshow</code> uses the
+default.</p>
+<ul><span id="zmw57dd0e365884" class="anchor_target"></span><table cellspacing="0" class="note" summary="Note" cellpadding="5" border="1"><tbody><tr width="90%"><td><p><b>Note:</b>&nbsp;&nbsp;
+
+
+Including the parameter name is optional, except when the image
+is specified by a file name. The syntax <code>imshow(I,[low high])</code> is
+equivalent  to <code>imshow(I,'DisplayRange',[low high])</code>.
+If you call <code>imshow</code> with a file name, then you must
+specify the <code>'DisplayRange'</code> parameter.</p></td></tr></tbody></table></ul>
+<p class="description_valueexample"><strong>Example: </strong><code>h = imshow(I,'DisplayRange',[0 80]);</code></p>
+<p class="datatypelist"><strong>Data Types: </strong><code>single</code> | <code>double</code> | <code>int8</code> | <code>int16</code> | <code>int32</code> | <code>int64</code> | <code>uint8</code> | <code>uint16</code> | <code>uint32</code> | <code>uint64</code></p></div></div><div class="expandableContent"><span id="inputarg_InitialMagnification" class="anchor_target"></span><h3 id="input_argument_namevalue_initialmagnification" class="expand expanded"><span><a style="display: block;" href="javascript:void(0);" title="Expand/Collapse"><span class="argument_name"><code>'InitialMagnification'</code> — Initial magnification of image display</span></a><span class="example_desc">100 (default) | numeric scalar | <code>'fit'</code></span></span></h3><div class="collapse" style="display:block">
+<p>Initial magnification of image display, specified as the comma-separated
+pair consisting of <code>'InitialMagnification'</code> and a
+numeric scalar or the string, <code>'fit'</code>. If set to
+100, then <code>imshow</code> displays the image at 100% magnification
+(one screen pixel for each image pixel). If set to <code>'fit'</code>,
+then <code>imshow</code> scales the entire image to fit in the
+window.</p>
+<p>Initially, <code>imshow</code> always displays the entire
+image. If the magnification value is so large that the image is too
+big to display on the screen, <code>imshow</code> warns and
+displays the image at the largest magnification that fits on the screen.</p>
+<p>If the image is displayed in a figure with its <code>'WindowStyle'</code> property
+set to <code>'docked'</code>, then <code>imshow</code> warns
+and displays the image at the largest magnification that fits in the
+figure.</p>
+<p>Note: If you specify the axes position (using <code>subplot</code> or <code>axes</code>), <code>imshow</code> ignores
+any initial magnification you might have specified and defaults to
+the <code>'fit'</code> behavior.</p>
+<p>When you use <code>imshow</code> with the <code>'Reduce'</code> parameter,
+the initial magnification must be <code>'fit'</code>.</p>
+<p class="description_valueexample"><strong>Example: </strong><code>h = imshow(I,'InitialMagnification','fit');</code></p>
+<p class="datatypelist"><strong>Data Types: </strong><code>single</code> | <code>double</code> | <code>int8</code> | <code>int16</code> | <code>int32</code> | <code>int64</code> | <code>uint8</code> | <code>uint16</code> | <code>uint32</code> | <code>uint64</code> | <code>char</code></p></div></div><div class="expandableContent"><span id="inputarg_Parent" class="anchor_target"></span><h3 id="input_argument_namevalue_parent" class="expand expanded"><span><a style="display: block;" href="javascript:void(0);" title="Expand/Collapse"><span class="argument_name"><code>'Parent'</code> — Parent axes of image object</span></a><span class="example_desc">handle</span></span></h3><div class="collapse" style="display:block">
+<p>Parent axes of image object, specified as the comma-separated
+pair consisting of <code>'Parent'</code> and a handle. Use the <code>'Parent'</code> name-value
+argument to build a UI that gives you control of the figure and axes
+properties.</p>
+<p class="datatypelist"><strong>Data Types: </strong><code>function_handle</code></p></div></div><div class="expandableContent"><span id="inputarg_Reduce" class="anchor_target"></span><h3 id="input_argument_namevalue_reduce" class="expand expanded"><span><a style="display: block;" href="javascript:void(0);" title="Expand/Collapse"><span class="argument_name"><code>'Reduce'</code> — Indicator for subsampling</span></a><span class="example_desc"><code>true</code> | <code>false</code> | <code>1</code> | <code>0</code></span></span></h3><div class="collapse" style="display:block">
+<p>Indicator for subsampling image, specified as the comma-separated
+pair consisting of <code>'Reduce'</code> and either <code>true</code>, <code>false</code>, <code>1</code>,
+or <code>0</code>. This argument is valid only when you use
+it with the name of a TIFF file. Use the <code>Reduce</code> argument
+to display overviews of very large images.</p>
+<p class="datatypelist"><strong>Data Types: </strong><code>logical</code></p></div></div><div class="expandableContent"><span id="inputarg_Xdata" class="anchor_target"></span><h3 id="input_argument_namevalue_xdata" class="expand expanded"><span><a style="display: block;" href="javascript:void(0);" title="Expand/Collapse"><span class="argument_name"><code>'Xdata'</code> — X-axis limits of nondefault coordinate system</span></a><span class="example_desc">two-element vector</span></span></h3><div class="collapse" style="display:block">
+<p>X-axis limits of nondefault coordinate system, specified as
+the comma-separated pair consisting of <code>'Xdata'</code> and
+a two-element vector. This argument establishes a nondefault spatial
+coordinate system by specifying the image <code>XData</code>.
+The value can have more than two elements, but <code>imshow</code> uses
+only the first and last elements.</p>
+<p class="description_valueexample"><strong>Example: </strong><code>'Xdata',[100 200]</code></p>
+<p class="datatypelist"><strong>Data Types: </strong><code>single</code> | <code>double</code> | <code>int8</code> | <code>int16</code> | <code>int32</code> | <code>int64</code> | <code>uint8</code> | <code>uint16</code> | <code>uint32</code> | <code>uint64</code></p></div></div><div class="expandableContent"><span id="inputarg_YData" class="anchor_target"></span><h3 id="input_argument_namevalue_ydata" class="expand expanded"><span><a style="display: block;" href="javascript:void(0);" title="Expand/Collapse"><span class="argument_name"><code>'YData'</code> — Y-axis limits of nondefault coordinate system</span></a><span class="example_desc">two-element vector</span></span></h3><div class="collapse" style="display:block">
+<p>Y-axis limits of nondefault coordinate system, specified as
+the comma-separated pair consisting of <code>'Ydata'</code> and
+a two-element vector. The value can have more than two elements, but <code>imshow</code> uses
+only the first and last elements.</p>
+<p class="description_valueexample"><strong>Example: </strong><code>'YData',[100 200]</code></p>
+<p class="datatypelist"><strong>Data Types: </strong><code>single</code> | <code>double</code> | <code>int8</code> | <code>int16</code> | <code>int32</code> | <code>int64</code> | <code>uint8</code> | <code>uint16</code> | <code>uint32</code> | <code>uint64</code></p></div></div></div></div></div></div><div itemprop="content" class="ref_sect"><h2 id="zmw57dd0e366244">Output Arguments</h2><div class="expandableContent"><div class="arguments"><div class="output_argument_container"><p class="switch"><a href="javascript:void(0);" class="expandAllLink" data-allexpanded="true7">collapse all</a></p><div class="expandableContent"><span id="outputarg_himage" class="anchor_target"></span><h3 id="output_argument_himage" class="expand expanded"><span><a style="display: block;" href="javascript:void(0);" title="Expand/Collapse"><span class="argument_name"><code>himage</code> — Image object</span></a><span class="example_desc">handle</span></span></h3><div class="collapse" style="display:block">
+<p>Image object, specified as a handle.</p>
+</div></div></div></div></div></div><div class="clear"></div><div class="moreabout ref_sect"><h2 id="moreabout">More About</h2><div class="expandableContent"><p class="switch"><a href="javascript:void(0);" class="expandAllLink">expand all</a></p><div class="expandableContent" itemprop="content"><span id="buiws8u-4" class="anchor_target"></span><h3 class="expand expanded" id="buiws8u-4"><span><a style="display:block;" href="javascript:void(0);" title="Expand/Collapse"><span>Tips</span></a></span></h3><div class="collapse" style="display:block"><p></p><ul type="disc"><li><p>If you have Image Processing Toolbox™, you can use
+the Image Viewer app as an integrated environment for displaying images
+and performing common image processing tasks.</p></li><li><p>If you have Image Processing Toolbox, you can use
+the <code>iptsetpref</code> function to set toolbox preferences
+that modify the behavior of <code>imshow</code>.</p></li><li><p>The <code>imshow</code> function is not supported
+when you start MATLAB with the <code>-nojvm</code> option.</p></li></ul></div></div></div></div><div class="ref_sect">
+<h2 id="zmw57dd0e366404">See Also</h2><p><span itemscope="" itemtype="http://www.mathworks.com/help/schema/MathWorksDocPage/SeeAlso" itemprop="seealso"><a itemprop="url" href="image.html"><span itemprop="name"><code>image</code></span></a></span> | <span itemscope="" itemtype="http://www.mathworks.com/help/schema/MathWorksDocPage/SeeAlso" itemprop="seealso"><a itemprop="url" href="imagesc.html"><span itemprop="name"><code>imagesc</code></span></a></span> | <span itemscope="" itemtype="http://www.mathworks.com/help/schema/MathWorksDocPage/SeeAlso" itemprop="seealso"><a itemprop="url" href="imfinfo.html"><span itemprop="name"><code>imfinfo</code></span></a></span> | <span itemscope="" itemtype="http://www.mathworks.com/help/schema/MathWorksDocPage/SeeAlso" itemprop="seealso"><a itemprop="url" href="imread.html"><span itemprop="name"><code>imread</code></span></a></span> | <span itemscope="" itemtype="http://www.mathworks.com/help/schema/MathWorksDocPage/SeeAlso" itemprop="seealso"><a itemprop="url" href="imwrite.html"><span itemprop="name"><code>imwrite</code></span></a></span> | <span itemscope="" itemtype="http://www.mathworks.com/help/schema/MathWorksDocPage/SeeAlso" itemprop="seealso"><a itemprop="url" href="../../images/ref/iptsetpref.html"><span itemprop="name"><code>iptsetpref</code></span></a></span></p>
+
+
+
+</div>
+</div></div></section>
+<div class="feedbackblock">Was this topic helpful?
+<input type="button" value="Yes" onclick="openFeedbackWindow('http://www.mathworks.com/programs/bounce_hub_help.html?s_cid=Help_Topic_Survey&amp;surveyParams='+document.location.href+'-YES-R2015b');">
+<input type="button" value="No" onclick="openFeedbackWindow('http://www.mathworks.com/programs/bounce_hub_help.html?s_cid=Help_Topic_Survey&amp;surveyParams='+document.location.href+'-NO-R2015b');">
+</div>
+<!--Last updated: Tue Aug  4 18:35:17 EDT 2015-->
+</div>
+</div>
+</div><!--close_0960-->
+</div><!--close_0970-->
+<div class="body_trail_container">
+<div class="container-fluid">
+<div class="row">
+<div class="col-xs-12">
+<div class="row"><div class="col-xs-12 col-sm-3"><h5><a href="../index.html?s_cid=doc_ftr">MATLAB Documentation</a></h5>
+<ul class="list-unstyled hidden-xs"><li><a href="../getting-started-with-matlab.html?s_cid=doc_ftr">Getting Started</a></li>
+<li><a href="../examples.html?s_cid=doc_ftr">Examples</a></li>
+<li><a href="../functionlist.html?s_cid=doc_ftr">Functions</a></li>
+<li><a href="../release-notes.html?s_cid=doc_ftr">Release Notes</a></li>
+<li><a href="http://www.mathworks.com/help/releases/R2015b/pdf_doc/matlab/index.html?s_cid=doc_ftr">PDF Documentation</a></li>
+</ul>
+</div>
+<div class="col-xs-12 col-sm-3"><h5><a href="../../documentation-center.html?s_cid=doc_ftr">Other Documentation</a></h5>
+<ul class="list-unstyled hidden-xs"><li><a href="../../simulink/index.html?s_cid=doc_ftr">Simulink</a></li><li><a href="../../symbolic/index.html?s_cid=doc_ftr">Symbolic Math Toolbox</a></li><li><a href="../../stats/index.html?s_cid=doc_ftr">Statistics and Machine Learning Toolbox</a></li><li><a href="../../images/index.html?s_cid=doc_ftr">Image Processing Toolbox</a></li><li><a href="../../signal/index.html?s_cid=doc_ftr">Signal Processing Toolbox</a></li><li><a href="../../documentation-center.html?s_cid=doc_ftr">All Products</a></li></ul>
+</div>
+<div class="col-xs-12 col-sm-3"><h5><a href="http://www.mathworks.com/support/?s_cid=doc_ftr">Support</a></h5>
+<ul class="list-unstyled hidden-xs"><li><a href="http://www.mathworks.com/matlabcentral/answers/?s_cid=doc_ftr">MATLAB Answers</a></li><li><a href="http://www.mathworks.com/support/install-matlab.html?s_cid=doc_ftr">Installation Help</a></li><li><a href="http://www.mathworks.com/support/bugreports/?s_cid=doc_ftr">Bug Reports</a></li><li><a href="http://www.mathworks.com/products/availability/?s_cid=doc_ftr">Product Requirements</a></li><li><a href="http://www.mathworks.com/downloads/?s_cid=doc_ftr">Software Downloads</a></li></ul>
+</div>
+</div>
+</div>
+</div>
+</div><!--END.CLASS container-fluid-->
+</div><!--END.CLASS body_trail_container-->
+<footer id="footer" class="bs-footer">
+<div class="container-fluid">
+<div class="footer">
+<div class="row">
+<div class="col-xs-12">
+<p class="copyright">© 1994-2015 The MathWorks, Inc.</p>
+<ul class="footernav"><li class="footernav_help"><a href="MATLAB:web(matlab.internal.licenseAgreement)">Terms of Use</a></li><li class="footernav_patents"><a href="MATLAB:web([matlabroot '/patents.txt'])">Patents</a></li><li class="footernav_trademarks"><a href="MATLAB:web([matlabroot '/trademarks.txt'])">Trademarks</a></li><li class="footernav_piracy"><a href="MATLAB:web([docroot '/acknowledgments.html'])">Acknowledgments</a></li></ul></div>
+</div>
+</div>
+</div>
+</footer>
+</div><!--close row-offcanvas-->
+
+
+<a class="btn btn_primary" id="go-top" style="display: inline;"><span class="icon-arrow-open-up icon_24"></span></a></body></html>
